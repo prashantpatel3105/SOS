@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add To Cart</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+        integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- external css -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Serif> -->
+
+</head>
+
+<body>
+    <!-- -------------NAVBAR--------------- -->
+    <div class="top-headar">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+                <ul style="display: flex;list-style: none;">
+                  <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Opp.MK collage, Bholav, Bharuch, Gujrat 392001
+                  </li>
+                  <li style="margin-left: 20px;">
+                      <i><i class="fa-solid fa-phone"></i></i>
+                      +911234567890
+                  </li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <ul style="list-style: none;text-align: right;">
+                  <div>          
+                    <li style="text-align: right;">
+                  <i class="fa-sharp fa-solid fa-map-pin"></i>
+                   <a style="text-decoration: none;color: black;" href="Ordertrack.html"> Order Tracking</a>
+      
+                   <i style="margin-left: 20px;" class="fa-solid fa-user-plus"></i>
+                   <a style="text-decoration: none;color: black;" href="">Register</a>
+      
+                   <i  style="margin-left: 20px;" class="fa-solid fa-user"></i>
+                   <a style="text-decoration: none;color: black;" href=""> Sign in</a>
+                 </li>
+                
+              </div>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold">
+                <img src="images/logo_1.jpg" class="logo-nav">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul  class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active " href="product.html" >Product
+                        </a>
+                       
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-right" style="list-style-type: none;">
+                    <li><a style="color: black;" href="AddToCart.html"><i class="fa-solid fa-cart-shopping cart-size" id="cart-icon"></i></a> </li>
+                </ul>
+                <!-- cart -->
+
+            </div>
+        </div>
+    </nav>
+    <hr>
+    <div class="container">
+        <pre
+            style="font-size: 18px;"> <a style="color: black; text-decoration: none;" href="index.html"><b>Home </b></a>/<a style="color: #6A8234;"><b>Checkout</b> </a></pre>
+
+    </div>
+
+    <!-- ------------NAVBAR_END------------------ -->
+
+    <!-- -----------------ADD TO CART---------------- -->
+    <!-- <div class="container">
+            <div class="row">
+                <div style="margin-top: 50px;"  class="col-lg-7">
+                    <h5>Shipping Information</h5>
+                    <div style="display: flex;">
+                   <p>Already have an Account?</p><a style="color: gray;cursor: pointer;"><b>Login</b></a>
+                </div>
+                </div>
+            </div>
+        </div>    -->
+    <section class="inner-section inner-section-bg my_card">
+        <div class="container">
+            <form novalidate="" data-validate="parsley" id="checkout_formid">
+                <input type="hidden" name="_token" value="3DvighoEt0CDwjpOOhrnCyKdPJDsJh1rZuSr1oLo">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <h5>Shipping Information</h5>
+                        <p>Already have an account? <strong><a href="">Login</a></strong>
+                        </p>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <input id="name" name="name" type="text" placeholder="Name" value=""
+                                        class="form-control parsley-validated" data-required="true">
+                                    <span class="text-danger error-text name_error"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <input id="email" name="email" type="email" placeholder="Email Address" value=""
+                                        class="form-control parsley-validated" data-required="true">
+                                    <span class="text-danger error-text email_error"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <input id="phone" name="phone" type="text" placeholder="Phone" value=""
+                                        class="form-control parsley-validated" data-required="true">
+                                    <span class="text-danger error-text phone_error"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <select id="country" name="country" class="form-control parsley-validated"
+                                        data-required="true">
+                                        <option value="">Country</option>
+                                        <option value="Australia">
+                                            Australia
+                                        </option>
+                                        <option value="Bangladesh">
+                                            Bangladesh
+                                        </option>
+                                        <option value="India">
+                                            India
+                                        </option>
+                                        <option value="Pakistan">
+                                            Pakistan
+                                        </option>
+                                        <option value="Turkey">
+                                            Turkey
+                                        </option>
+                                        <option value="United Kingdom">
+                                            United Kingdom
+                                        </option>
+                                        <option value="United States">
+                                            United States
+                                        </option>
+                                    </select>
+                                    <span class="text-danger error-text country_error"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <input id="state" name="state" type="text" placeholder="State"
+                                        class="form-control parsley-validated" data-required="true">
+                                    <span class="text-danger error-text state_error"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <input id="zip_code" name="zip_code" type="text" placeholder="Zip Code"
+                                        class="form-control parsley-validated" data-required="true">
+                                    <span class="text-danger error-text zip_code_error"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <input id="city" name="city" type="text" placeholder="City"
+                                        class="form-control parsley-validated" data-required="true">
+                                    <span class="text-danger error-text city_error"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <textarea id="address" name="address" placeholder="Address" rows="2"
+                                        class="form-control parsley-validated" data-required="true"></textarea>
+                                    <span class="text-danger error-text address_error"></span>
+                                </div>
+
+                              
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <textarea id="address" name="address" placeholder="Address 2" rows="2"
+                                        class="form-control parsley-validated" data-required="true"></textarea>
+                                    <span class="text-danger error-text address_error"></span>
+                                </div>
+
+                              
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <textarea id="address" name="address" placeholder="Address 3" rows="2"
+                                        class="form-control parsley-validated" data-required="true"></textarea>
+                                    <span class="text-danger error-text address_error"></span>
+                                </div>
+
+                              
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="checkboxlist">
+                                    <label class="checkbox-title">
+                                        <input id="new_account" name="new_account" type="checkbox">Register an account
+                                        with above information?
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row hideclass" id="new_account_pass">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <input type="password" name="password" id="password" class="form-control"
+                                        placeholder="Password">
+                                    <span class="text-danger error-text password_error"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <input type="password" name="password_confirmation" id="password_confirmation"
+                                        class="form-control" placeholder="Confirm password">
+                                </div>
+                            </div>
+                        </div>
+
+                        <h5 class="mt10">Payment Method</h5>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <span class="text-danger error-text payment_method_error"></span>
+
+
+                                <div class="payment_card">
+                                    <div class="checkboxlist">
+                                        <label class="checkbox-title">
+                                            <input id="payment_method_razorpay" name="payment_method" type="radio"
+                                                value="5"><img
+                                                src="https://zizry.com/public/frontend/images/razorpay.png"
+                                                alt="Razorpay" />
+                                        </label>
+                                    </div>
+                                    <p id="pay_razorpay" class="hideclass">Pay online via Razorpay</p>
+                                </div>
+
+
+                                <div class="payment_card">
+                                    <div class="checkboxlist">
+                                        <label class="checkbox-title">
+                                            <input id="payment_method_cod" name="payment_method" type="radio"
+                                                value="1"><img
+                                                src="https://zizry.com/public/frontend/images/cash_on_delivery.png"
+                                                alt="Cash on Delivery" />
+                                        </label>
+                                    </div>
+                                    <p id="pay_cod" class="hideclass">Please pay money directly to the postman, if you
+                                        choose cash on delivery method (COD).</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mb-3 mt10">
+                                    <textarea name="comments" class="form-control" placeholder="Note"
+                                        rows="2"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="carttotals-card">
+                            <div class="carttotals-head" ><b>Order Summary</b></div>
+                            <div class="carttotals-body">
+                                <table class="table">
+                                    <tbody>
+
+
+
+
+
+                                        <tr>
+                                            <td style="display: flex;" colspan="2" class="tp_group">
+                                                <div style="display: flex;" class="store_logo">
+                                                    <a href="https://zizry.com/stores/47/hasbi">
+                                                        <img style="width:80px;" src="images/product_02.jpg"
+                                                            alt="Hasbi" />
+                                                    </a>
+                                                </div>
+                                                <div class="store_name">
+                                                    <p style="text-align: left;" ><strong>Sold By</strong></p>
+                                                    <p  ><a >Abc</a></p>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+
+                                        <tr>
+                                            <td>
+                                                <p style="color: black;" class="title"><a><b>Makkai</b></a></p>
+                                                <p class="sub-title"><strong>1 Kg</strong></p>
+                                            </td>
+                                            <td>
+                                                <p class="price"><b>₹30.00</b></p>
+                                                <p class="sub-price">₹30 x 1</p>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td colspan="2"><span  style="color: black;" class=""><b>Shipping Fee</b> </span><span
+                                                    class="price" style="color: black;margin-left: 300px; "><b>₹</b><span style="color: black; text-align: right;" class="shipping_fee"><b>0</b></span></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2"><span style="color: black;" class="title"><b>Tax</b></span><span
+                                                  class="price"  style="color: black; margin-left: 350px;"  ><b>₹1.50</b></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2"><span class="total" style="color: black;"><b>Total</b></span><span
+                                                    class="total-price" style="color: black; margin-left: 330px;">₹<span class="total_amount" style="color: black;"><b>31.50</b></span></span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                               
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+
+    <hr style="margin-top: 100px;">
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="col-lg-4 col-md-7 col-sm-12">
+                <img src="images/logo_1.jpg" class="footer-logo"><br>
+                <div><i class="fa fa-home home fa-2x" aria-hidden="true"></i>
+                    <p class="home-txt">No: 58 A, your Street, Baltimore, USA 4508</p>
+                </div>
+                <div>
+                    <i class="fa fa-phone phone" aria-hidden="true"></i>
+                    <p class="pho-txt">+01 23456789</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope env" aria-hidden="true"></i>
+                    <p class="email"> support@somemail.com</p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-5 col-sm-12">
+                <p class="footer-tit-1">INFORMATION</p>
+                <a class="footer-txt1" href="contact.html">Contact us</a>
+                <a class="footer-txt1" href="shipping.html">Delivery Information</a>
+                <a class="footer-txt1">Privacy & Policy</a>
+                <a class="footer-txt1">Terms & Condition</a>
+                <a class="footer-txt1">Manufactures</a>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-12">
+                <p class="footer-tit-1">OUR COMPANY</p>
+                <a class="footer-txt1">My Account</a>
+                <a class="footer-txt1">My Cart</a>
+                <a class="footer-txt1">Login</a>
+                <a class="footer-txt1">Wishlist</a>
+                <a class="footer-txt1">Checkout</a>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-12">
+                <p class="footer-tit-1">MY ACCOUNT</p>
+                <a class="footer-txt1">Shirts & Blouses</a>
+                <a class="footer-txt1">Halter Tops</a>
+                <a class="footer-txt1">Long pant</a>
+                <a class="footer-txt1">Hoodies</a>
+                <a class="footer-txt1">Sweatshirts</a>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-12">
+                <p class="footer-tit-1">OPENING TIME</p>
+                <a class="footer-txt1">Mon - Fri: 8AM - 10PM</a>
+                <a class="footer-txt1">Sat: 9AM-8PM</a>
+                <a class="footer-txt1">Suns: 14hPM-18hPM</a>
+                <a class="footer-txt1">We Work All The Holidays</a>
+                <a class="footer-txt2">Download our app</a>
+
+            </div>
+            <hr class="footer-bor">
+
+            <div class="col-lg-6 col-sm-12 footer-last">
+                Copyright <span>© HasThemes</span> All Right Reserved.
+            </div>
+            <div class="col-lg-6 col-sm-12 footer-card-sym">
+                <img src="images/footer-symb.webp">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ------------------CART END------------------------ -->
+    <script>
+        var is_rtl = "0";
+        if (is_rtl == 1) {
+            var isRTL = true;
+        } else {
+            var isRTL = false;
+        }
+
+        var theme_color = "#f68d20";
+        var base_url = "https://zizry.com";
+        var public_path = "https://zizry.com/public";
+
+        //Cookie Consent
+        var is_publish_cookie_consent = "1";
+        if (is_publish_cookie_consent == 1) {
+            let cookieModal = document.querySelector(".cookie_consent_card");
+            let acceptCookieBtn = document.querySelector(".accept_btn");
+
+            acceptCookieBtn.addEventListener("click", function () {
+                cookieModal.classList.remove("active");
+                localStorage.setItem("cookie_consent", 1);
+            });
+
+            let cookieAccepted = localStorage.getItem("cookie_consent");
+            if (cookieAccepted == 1) {
+                cookieModal.classList.remove("active");
+            } else {
+                cookieModal.classList.add("active");
+            }
+        }
+
+        var x=1
+function appendRow()
+{
+   var d = document.getElementById('div');
+   d.innerHTML += "<textarea type='text' id='tst"+ x++ +"'><br >";
+}
+    </script>
+</body>
+
+</html>
